@@ -13,7 +13,7 @@ The first step is to install the OpenAI Python library
 > [!TIP]
 > The following article, straight from the OpenAI documentation, [Get up and running with the OpenAI API](https://platform.openai.com/docs/quickstart?context=python), is obviously very helpful.\
 
-We use the following code to install the libraries:
+We use the following code to install the library:
 ```
 pip install --upgrade openai
 ```
