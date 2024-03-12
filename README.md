@@ -26,13 +26,39 @@ As for authentication, the OpenAI API uses API keys. We can visit our [API Keys 
 ## Create the function
 Placeholder text
 ```
-placeholder code
+import time
+import openai
+
+openai.api_key = "[we enter our API key here]"
+
+def get_completion(prompt, model="gpt-3.5-turbo"):
+    messages = [{"role": "user", "content": prompt}]
+    response = openai.chat.completions.create(
+        model=model,
+        messages=messages,
+        temperature=0.7, # this is the degree of randomness of the model's output
+    )
+
+    # Sleep for the delay
+    time.sleep(2)
+    
+    return response.choices[0].message.content
 ```
+
+>[!TIP]
+>Lower values for temperature result in more consistent outputs (e.g. 0.2), while higher values generate more diverse and creative results (e.g. 1.0). Select a temperature value based on the desired trade-off between coherence and creativity for your specific application. The temperature can range is from 0 to 2.
   
 ## Execute the function
-Placeholder text
+Now that are `get_completion` function is defined, we can use it to start generate content.\
+As a first example we will use it to generate a poem about one of my favorite soccer player.
 ```
-placeholder oce
+# first we define our prompt
+prompt = f"""
+Your task is to help generate a poem about Zinedine Zidane using the style of Baudelaire\
+Make good ryhmes
+"""
+
+zidane_poem = get_completion(prompt)
 ```
 ![Screenshot of the SQL query results to select all events](https://github.com/mboss10/python-Athena/blob/main/Events_SQL_query.png)
   
