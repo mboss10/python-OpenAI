@@ -65,7 +65,7 @@ zidane_poem = get_completion(prompt)
 Let's use a more useful example.\
 
 Imagine we need to generate data for a demo environment containing feeback of attendees at an event collected via a survey.\
-Our prompt will look like the below:\
+Our prompt will look like the below:
 ```
 # We call the OpenAI API to generate demo data of survey feedback around an event
 prompt = f"""
