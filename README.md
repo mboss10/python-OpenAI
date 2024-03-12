@@ -78,6 +78,7 @@ Don't use carriage return
 survey_feedback = get_completion(prompt)
 ```
 
+![Print survey feedback](https://github.com/mboss10/python-OpenAI/blob/main/print(survey_feedback).png)
   toto
 Placeholder link - More queries and DataFrame results are available in my [Jupyter notebook](https://github.com/mboss10/python-Athena/blob/main/Athena%20connection%20and%20exploration.ipynb)
 
