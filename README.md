@@ -108,4 +108,4 @@ print(df)
 ```
 ![Results feedback list](https://github.com/mboss10/python-OpenAI/blob/main/Results%20feedback%20list.png)
 
-You can find the complete code the following [Jupyter notebook](https://github.com/mboss10/python-Athena/blob/main/Athena%20connection%20and%20exploration.ipynb)
+You can find the complete code the following [Jupyter notebook](https://github.com/mboss10/python-OpenAI/blob/main/OpenAI_API.ipynb)
