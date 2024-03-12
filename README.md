@@ -62,6 +62,23 @@ zidane_poem = get_completion(prompt)
 ```
 ![Screenshot - Print zidane poem](https://github.com/mboss10/python-OpenAI/blob/main/zidane_poem.png)
   
+Let's use a more useful example.\
+
+Imagine we need to generate data for a demo environment containing feeback of attendees at an event collected via a survey.\
+Our prompt will look like the below:\
+```
+# We call the OpenAI API to generate demo data of survey feedback around an event
+prompt = f"""
+Your task is to help generate a 2 sentence feedback example of an attendee of a data connference\
+You can use positive or negative elements\
+The feedback should be in the same paragraph as if someone has replied to a survey open question\
+Don't use carriage return
+"""
+
+survey_feedback = get_completion(prompt)
+```
+
+  toto
 Placeholder link - More queries and DataFrame results are available in my [Jupyter notebook](https://github.com/mboss10/python-Athena/blob/main/Athena%20connection%20and%20exploration.ipynb)
 
 ## Use the results to process the content generated
