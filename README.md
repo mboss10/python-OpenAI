@@ -62,7 +62,7 @@ zidane_poem = get_completion(prompt)
 ```
 ![Screenshot - Print zidane poem](https://github.com/mboss10/python-OpenAI/blob/main/zidane_poem.png)
   
-Let's use a more useful example.\
+Let's use a more useful example.
 
 Imagine we need to generate data for a demo environment containing feeback of attendees at an event collected via a survey.\
 Our prompt will look like the below:
