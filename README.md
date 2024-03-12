@@ -79,8 +79,32 @@ survey_feedback = get_completion(prompt)
 ```
 
 ![Print survey feedback](https://github.com/mboss10/python-OpenAI/blob/main/print(survey_feedback).png)
-  toto
-Placeholder link - More queries and DataFrame results are available in my [Jupyter notebook](https://github.com/mboss10/python-Athena/blob/main/Athena%20connection%20and%20exploration.ipynb)
+
 
 ## Use the results to process the content generated
-Placeholder text
+Considering our use case of generating demo data we can use our function and prompt to generate data in mass.\
+For example, we can build a list of feedback by iterating on the function. That is very handy when it comes to scale to create hundreds/thousands of real feedback.
+
+```
+# initiate a list
+feedback_list = []
+
+# loop to feed the list with results of the prompt
+for i in range(5):
+    survey_feedback = get_completion(prompt)
+    feedback_list.append(survey_feedback,)
+```
+Then you can use your list to further manipulate the data (display size, display list, iterate through the list, convert into a DataFrame, etc ...)
+```
+import pandas as pd
+
+print(f'List size: {len(feedback_list)}',end='\n\n')
+print(feedback_list,end='\n\n')
+for index,feedback in enumerate(feedback_list):
+    print(f'Feedback number {index+1}: {feedback}\n')
+
+df = pd.DataFrame(feedback_list)
+print(df)
+```
+
+Placeholder link - More queries and DataFrame results are available in my [Jupyter notebook](https://github.com/mboss10/python-Athena/blob/main/Athena%20connection%20and%20exploration.ipynb)
