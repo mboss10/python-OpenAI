@@ -60,7 +60,7 @@ Make good ryhmes
 
 zidane_poem = get_completion(prompt)
 ```
-![Screenshot - Print zidane poem](/main/zidane_poem.png)
+![Screenshot - Print zidane poem](https://github.com/mboss10/python-OpenAI/blob/main/zidane_poem.png)
   
 Placeholder link - More queries and DataFrame results are available in my [Jupyter notebook](https://github.com/mboss10/python-Athena/blob/main/Athena%20connection%20and%20exploration.ipynb)
 
